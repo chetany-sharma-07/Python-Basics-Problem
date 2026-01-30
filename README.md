@@ -7,3 +7,4 @@
 7_Treasure_Game.py--> A simple game using if-else. 
 8_who_pay_bill.py--> Select random name from list of freinds to pay bill
 9_Rock_Paper_Scissor.py--> A simple Rock Paper Scissor Game 
+10_Password_Generator.py--> A simple random password generator 
