@@ -1,4 +1,5 @@
 import random
+
 letters=[
     'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
     'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
@@ -22,4 +23,5 @@ for sym in range(0,nr_symbols):
 print(password_list)
 random.shuffle(password_list)
 print(password_list)
+
 print("".join(password_list))
