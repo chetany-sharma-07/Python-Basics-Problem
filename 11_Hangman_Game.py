@@ -10,25 +10,27 @@ for position in range(len(choosen_word)):
     placeholder+="_"
 print(placeholder)
 
-display=""
-guess_letter=input("\nGuess a letter: ").lower()
-    
-for letter in choosen_word:
-    if guess_letter == letter:
-        display+=letter
-    else:
-        display+="_"
-print(display) 
+correct_letter=[]
+game_over=False
 
-while choosen_word != display:
+while not game_over:
+    display=""
     guess_letter=input("\nGuess a letter: ").lower()
-    
-    for position,letter in enumerate(choosen_word):
+        
+    for letter in choosen_word:
         if guess_letter == letter:
-            tempList=list(display)
-            tempList[position]=guess_letter
-            display="".join(tempList)
-    print(display)
-    
-if "_" not in display:
-    print("You've Won")
+            display+=letter
+            correct_letter.append(guess_letter)
+        elif letter in correct_letter:
+            display+=letter
+        else:
+            display+="_"
+    print(display) 
+
+    if "_" not in display:
+        game_over=True
+        print("You win. ")
+
+
+
+
