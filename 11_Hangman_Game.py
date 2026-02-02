@@ -62,7 +62,6 @@ word_list=["aardvark", "baboon", "camel"]
 
 #   random word choosen from word_list
 choosen_word=random.choice(word_list)
-# print(choosen_word)
 
 # generating blank _ equal to the length of choosen word
 placeholder=""
@@ -78,7 +77,8 @@ no_of_lifes=6 #total no of lifes
 while not game_over:
     display=""
     guess_letter=input("\nGuess a letter: ").lower()
-        
+
+    # when guess letter in choosen word 
     for letter in choosen_word:
         if guess_letter == letter:
             display+=letter
@@ -89,18 +89,19 @@ while not game_over:
             display+="_"
     print(display) 
 
+    # when guess letter not in choosen word
     if guess_letter not in choosen_word:
-        print(stages[no_of_lifes])
         no_of_lifes-=1
-        print(f"No of Lifes Remaining: {no_of_lifes+1}")
         if no_of_lifes==-1:
             game_over=True
             print("You lose")
 
+    # when no _ remain in display variable then You win 
     if "_" not in display:
         game_over=True
         print("You win. ")
 
-
+    # shows different stages of hangman as per no of lifes remain
+    print(stages[no_of_lifes])
 
 
