@@ -9,3 +9,4 @@
 9_Rock_Paper_Scissor.py--> A simple Rock Paper Scissor Game 
 10_Password_Generator.py--> A simple random password generator 
 11_Hangman_Game.py--> A word guessing game made by multiple concepts like loops,strings,list,etc.
+12_Love_Calculator.py--> A simple logic based love calculator where function with input and function calling is used.
