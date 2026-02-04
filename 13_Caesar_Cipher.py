@@ -7,27 +7,15 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 print("##################CAESAR CIPHER##################")
 
-def encrypt(text , shift):
-    encrypted_text=""
+def caesar(direction,text,shift):
+    if direction=="decode":
+        shift*=-1
+    caesar_text=""
     for char in text:
         shift_position=alphabet.index(char)+shift
         new_position=shift_position%len(alphabet)
-        encrypted_text+=alphabet[new_position]
-    print(f"Encoded result: {encrypted_text}")
-
-def decrypt(text, shift):
-    decrypted_text=""
-    for char in text:
-        shift_position=alphabet.index(char)-shift
-        new_position=shift_position%len(alphabet)
-        decrypted_text+=alphabet[new_position]
-    print(f"Decoded result: {decrypted_text}")
-
-def caesar(direction,text,shift):
-    if direction=="encode":
-        encrypt(text,shift)
-    else:
-        decrypt(text,shift)
+        caesar_text+=alphabet[new_position]
+    print(f"Here is the result: {caesar_text}")
 
 while True:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
