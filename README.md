@@ -14,4 +14,5 @@
 14_Grading_Program.py-->This program shows the basic grading system using dictionary.
 15_Blind_Auction_Project.py--> A simple blind auction project using dictionaries.
 16_Leap_Year.py--> program to check a year is leap year or not .
+17_Calculator.py--> A calculator made by using dict,functions and operations.
 
