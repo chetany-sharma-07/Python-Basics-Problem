@@ -16,4 +16,4 @@
 16_Leap_Year.py--> program to check a year is leap year or not .
 17_Calculator.py--> A calculator made by using dict,functions and operations.
 18_BlackJack_Game.py--> It is a game which is made by various logics and conditions.
-
+19_Prime_Number.py--> It checks a number is Prime or not
