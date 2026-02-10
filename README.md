@@ -19,3 +19,4 @@
 19_Prime_Number.py--> It checks a number is Prime or not
 20_Number_Guessing_Game.py--> A simple number guessing game.
 21_Higher_Lower_Game.py--> It's a game which is made by game logic and used concepts like dict,loops,random module,etc.
+22_Coffee_Machine_Program--> This program shows the actual working of a Coffee Machine made by multiple concepts of Python.
