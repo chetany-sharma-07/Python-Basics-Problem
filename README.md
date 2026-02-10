@@ -17,3 +17,5 @@
 17_Calculator.py--> A calculator made by using dict,functions and operations.
 18_BlackJack_Game.py--> It is a game which is made by various logics and conditions.
 19_Prime_Number.py--> It checks a number is Prime or not
+20_Number_Guessing_Game.py--> A simple number guessing game.
+
