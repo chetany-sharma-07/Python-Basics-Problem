@@ -1,3 +1,5 @@
+import os
+
 print("####################### WELCOME TO BLIND AUCTION PROGRAM ########################")
 
 bidder={}
@@ -6,7 +8,7 @@ while True:
     bid=int(input("What's your bid?: $"))
     bidder[bidder_name]=bid
     any_other_bidder=input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
-    print("\n"*20)
+    os.system('cls')
     if any_other_bidder=="no":
         break
 

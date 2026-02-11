@@ -1,4 +1,5 @@
 import random
+import os
 cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
 
 #this change 11 to 1 if user score going over 21
@@ -42,6 +43,7 @@ def show_all_cards(user_cards,comp_cards):
 # here game starts
 
 game_continue=input("\nDo you want to play BlackJack Game. If yes type 'y' or if no type 'n' ").lower()
+os.system('cls')
 while game_continue=='y':
     print("\n##########======>>>> WELCOME TO BLACK JACK GAME <<<<======#########")
     #2 random cards pick by user and computer
@@ -60,6 +62,7 @@ while game_continue=='y':
     #here checks for black jack cards 
     if check_black_jack(user_cards,comp_cards):
         game_continue=input("\nYou'd like to play again. Type 'y' for yes or 'n' for no: ")
+        os.system('cls')
         continue
 
     #here checks user score is grater than 21.
@@ -67,6 +70,7 @@ while game_continue=='y':
         show_all_cards(user_cards,comp_cards)
         print("\nYou lose, You score goes over 21.")
         game_continue=input("\nYou'd like to play again. Type 'y' for yes or 'n' for no: ")
+        os.system('cls')
         continue
     
     #here user can choose more cards
@@ -82,6 +86,7 @@ while game_continue=='y':
                 show_all_cards(user_cards,comp_cards)
                 print("\nYou lose, You score goes above 21.")
                 game_continue=input("\nYou'd like to play again. Type 'y' for yes or 'n' for no: ")
+                os.system('cls')
                 break
         else:
             break
@@ -105,4 +110,5 @@ while game_continue=='y':
     else:
         print("It's Draw, Both score same.")
 
+    os.system('cls')
     game_continue=input("\nYou'd like to play again. Type 'y' for yes or 'n' for no: ")
